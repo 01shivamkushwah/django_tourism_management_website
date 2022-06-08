@@ -1,0 +1,21 @@
+{% extends "base.html"%} {% block content%}
+<h1 style="text-align: center">Contact US</h1>
+<h1> {{n}} </h1>
+<form method="POST" action="{% url 'saveenquiry'%}">
+    {% csrf_token %}
+    <div style="margin:200px;margin-top: 0px;" class="row">
+        <div class="col-20">
+            <marquee style="color: green;" behavior="" direction="">{{t}}</marquee>
+            <label style="font-size: 20px"> Name</label>
+            <input class="form-control" required name="name" type="text" class="form-control"><br>
+            <label style="font-size: 20px"> surname</label>
+            <input class="form-control" required name="surname" type="text" class="form-control"><br>
+            <label style="font-size: 20px"> email</label>
+            <input class="form-control" required name="email" type="text" class="form-control"><br>
+            <label style="font-size: 20px">Subject</label>
+            <input class="form-control" required name="subject" type="text" class="form-control"><br>
+            <button type="submit">submit</button>
+        </div>
+    </div>
+</form>
+{%endblock%}

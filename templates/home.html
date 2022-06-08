@@ -1,0 +1,240 @@
+ {% extends "base.html"%} {%block content%}
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="centre-bloack" style="background-color:#a0cef3">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img style="margin-left: 25%" src="/static/images/RAJSHTAN.jpg" class="d-block w-50" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5><a style="color: black" href="/rajashtan">Rajashtan</a></h5>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img style="margin-left: 25%" src="/static/images/GUJRAT.jpg" class="d-block w-50" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5><a style="color: black" href="/gujrat">Gujrat</a></h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img style="margin-left: 25%" src="/static/images/amritsar-3083693_960_720.jpg" class="d-block w-50 " alt="... ">
+                <div class="carousel-caption d-none d-md-block ">
+                    <h5><a style="color: black " href="/punjab">Punjab</a></h5>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev " type="button " data-bs-target="#carouselExampleCaptions " data-bs-slide="prev ">
+          <span class="carousel-control-prev-icon " aria-hidden="true "></span>
+          <span class="visually-hidden ">Previous</span>
+        </button>
+        <button class="carousel-control-next " type="button " data-bs-target="#carouselExampleCaptions " data-bs-slide="next ">
+          <span class="carousel-control-next-icon " aria-hidden="true "></span>
+          <span class="visually-hidden ">Next</span>
+        </button>
+    </div>
+</div>
+<!-- <br><br><br>
+<label for="state-name ">state name</label>
+<select name="state-name " id="state-name ">
+
+<option value="city1 ">city1</option>
+<option value="city2 ">city2</option></select> -->
+
+<div class="album py-5 bg-light ">
+    <hr>
+    <div style=" background-color: rgb(161, 185, 185); ">
+        <h1 style="text-align: center ; ">STATES</h1>
+        <hr>
+    </div>
+    <div class="container ">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 ">
+            <div class="col ">
+                <div class="card shadow-sm ">
+                    <img src="/static/images/RAJSHTAN.jpg " width="100% " height="225 " alt=" ">
+
+                    <div class="card-body ">
+                        <a href="rajashtan ">Rajashtan</a> {% comment %}
+                        <p class="card-text ">The moment you set foot in Jaipur, you will feel like everything has come straight out of the pages of some epic novel</p> {% endcomment %}
+                        <div class="d-flex justify-content-between align-items-center ">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="card shadow-sm ">
+                    <img src="/static/images/ASSAM.jpg " width="100% " height="225 " alt=" ">
+                    <div class="card-body ">
+                        <a href="assam ">Assam</a>
+                        <div class="d-flex justify-content-between align-items-center ">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="card shadow-sm ">
+                    <img src="/static/images/KARNATAKA.jpg " width="100% " height="225 " alt=" ">
+                    <div class="card-body ">
+                        <a href="karnataka ">Karnataka</a> {% comment %}
+                        <p class="card-text ">هذه بطاقة أوسع مع نص داعم أدناه كمقدمة طبيعية لمحتوى إضافي. هذا المحتوى أطول قليلاً.</p> {% endcomment %}
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col ">
+                <div class="card shadow-sm ">
+                    <img src="/static/images/MADHYA PRADESH.jpg " width="100% " height="225 " alt=" ">
+                    <div class="card-body ">
+                        <a href="madhya_pradesh ">Madhya Pradesh</a> {% comment %}
+                        <p class="card-text ">هذه بطاقة أوسع مع نص داعم أدناه كمقدمة طبيعية لمحتوى إضافي. هذا المحتوى أطول قليلاً.</p> {% endcomment %}
+
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="card shadow-sm ">
+                    <img src="/static/images/BIHAR.jpg " width="100% " height="225 " alt=" ">
+                    <div class="card-body ">
+                        <a href="bihar ">Bihar</a>
+                        <!-- <a href=" ">Goa</a> -->
+                        {% comment %}
+                        <p class="card-text ">Home to one of the 7 wonders of the world, the Taj Mahal, Agra is a sneak peek into the architectural history with other structures such as Agra Fort and Fatehpur Sikri</p> {% endcomment %}
+
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="card shadow-sm ">
+                    <img src="/static/images/GUJRAT.jpg " width="100% " height="225 " alt=" ">
+                    <div class="card-body ">
+                        <a href="gujrat ">Gujrat</a> {% comment %}
+                        <!-- <p class="card-text ">هذه بطاقة أوسع مع نص داعم أدناه كمقدمة طبيعية لمحتوى إضافي. هذا المحتوى أطول قليلاً.</p> {% endcomment %} 
+                        <div class="d-flex justify-content-between align-items-center ">
+                            <div class="btn-group ">
+                                {% comment %} <button type="button " class="btn btn-sm btn-outline-secondary ">عرض</button> {% endcomment %} {% comment %} <button type="button " class="btn btn-sm btn-outline-secondary ">تعديل</button> {% endcomment %}
+                            </div>
+                            {% comment %} <small class="text-muted ">9 دقائق</small> {% endcomment %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col ">
+                <div class="card shadow-sm ">
+                    <img src="/static/images/PUNJAB.jpg " width="100% " height="225 " alt=" ">
+                    <div class="card-body ">
+                        <a href="punjab ">Punjab</a> {% comment %}
+                        <p class="card-text ">هذه بطاقة أوسع مع نص داعم أدناه كمقدمة طبيعية لمحتوى إضافي. هذا المحتوى أطول قليلاً.</p> {% endcomment %}
+                        <div class="d-flex justify-content-between align-items-center ">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="card shadow-sm ">
+                    <img src="/static/images/MAHARASHTRA.jpg " width="100% " height="225 " alt=" ">
+                    <div class="card-body ">
+                        <a href="maharashtra ">Maharashtra</a> {% comment %}
+                        <p class="card-text ">هذه بطاقة أوسع مع نص داعم أدناه كمقدمة طبيعية لمحتوى إضافي. هذا المحتوى أطول قليلاً.</p> {% endcomment %}
+                        <div class="d-flex justify-content-between align-items-center ">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="card shadow-sm ">
+                    <img src="/static/images/HARIYANA.jpg " width="100% " height="225 " alt=" ">
+                    <div class="card-body ">
+                        <a href="hariyana ">Hariyana</a> {% comment %}
+                        <p class="card-text ">هذه بطاقة أوسع مع نص داعم أدناه كمقدمة طبيعية لمحتوى إضافي. هذا المحتوى أطول قليلاً.</p> {% endcomment %}
+                        <div class="d-flex justify-content-between align-items-center ">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="album py-5 bg-light ">
+    <hr>
+    <div style="background-color: rgb(161, 185, 185); ">
+        <h1 style="text-align: center; ">Famous Places</h1>
+        <hr>
+        <!-- <h1 style="text-align: center ">STATES</h1> -->
+    </div>
+    <div class="container ">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 ">
+            <div class="col ">
+                <div class="card shadow-sm ">
+                    <img src="/static/images/tajmahal.jpg " width="100% " height="225 " alt=" ">
+
+                    <div class="card-body ">
+                        <a href="tajmahal ">The Taj Mahal, Agra</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="card shadow-sm ">
+                    <img src="/static/images/JAISALMER.jpg " width="100% " height="225 " alt=" ">
+                    <div class="card-body ">
+                        <a href="jaisalmer ">The Golden City: Jaisalmer</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="card shadow-sm ">
+                    <img src="/static/images/redfort.jpg " width="100% " height="225 " alt=" ">
+                    <div class="card-body ">
+                        <a href="newdelhi ">The Red Fort, New Delhi</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col ">
+                <div class="card shadow-sm ">
+                    <img src="/static/images/amritsar.jpg " width="100% " height="225 " alt=" ">
+                    <div class="card-body ">
+                        <a href="amritsar ">Harmandir Sahib: The Golden Temple of Amritsar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="card shadow-sm ">
+                    <img src="/static/images/varanshi.jpg " width="100% " height="225 " alt=" ">
+                    <div class="card-body ">
+                        <a href="varanasi ">The Holy City of Varanasi</a>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="card shadow-sm ">
+                    <img src="/static/images/goabeach.jpg " width="100% " height="225 " alt=" ">
+                    <div class="card-body ">
+                        <a href="goa_beach ">The Beaches of Goa</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</div>
+{%endblock%}

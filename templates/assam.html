@@ -1,0 +1,26 @@
+{% extends "base.html"%} {% block content%}
+<div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+    <hr>
+    <h1 class="display-4 fw-normal">ASSAM</h1>
+    <hr><br> {% for n in alldata%}
+    <div class="col-20">
+
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col-auto d-none d-lg-block">
+                <img src="/media/{{n.image}}" width="400" height="350" alt="">
+            </div>
+            <div class="col p-4 d-flex flex-column position-static">
+                <!-- <strong class="d-inline-block mb-2 text-primary">World</strong> -->
+                <h3 class="mb-0">{{n.name}}</h3>
+                <div class="mb-1 text-muted">Nov 12</div>
+                <p class="card-text mb-auto">{{n.desc|safe}}</p>
+                <!-- <a href="#" class="stretched-link">Continue reading</a> -->
+                <button><a href="{{n.hotels}}">hotels</a></button>
+                <button>
+              <a href="{{n.cafes}}">cafes</a>
+              </button> {% comment %} <button>tourist places</button> {% endcomment %}
+            </div>
+
+        </div>
+    </div>
+    {%endfor%} {%endblock%}

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <style>
+        .nayan {
+            width: 100%;
+            height: 100%;
+        }
+        
+        #active {
+            color: red;
+        }
+        
+        #active1 {
+            color: red;
+        }
+        
+        #active4 {
+            color: red;
+        }
+        
+        #active6 {
+            color: red;
+        }
+    </style>
+    <title>tourist management</title>
+</head>
+
+<body style="background-color:white;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Tourism</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="{%if request.path == '/' %}active{%endif%}" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="{%if request.path == '/famousplace/' %}active1{%endif%}" href="/famousplace">Famous Place</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  States
+                </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/rajashtan">rajashtan</a></li>
+                            <li><a class="dropdown-item" href="/ladakh">ladakh</a></li>
+                            <li><a class="dropdown-item" href="/andaman_and_nicobar">Andaman and Nicobar</a></li>
+                            <li><a class="dropdown-item" href="/arunachal_pradesh">Arunachal Pradesh</a></li>
+                            <li><a class="dropdown-item" href="/assam">Assam</a></li>
+                            <li><a class="dropdown-item" href="/andhra_pradesh">Andhra Pradesh</a></li>
+                            <li><a class="dropdown-item" href="/bihar">Bihar</a></li>
+                            <li><a class="dropdown-item" href="/chhattisgarh">Chattisgarh</a></li>
+                            <li><a class="dropdown-item" href="/delhi">Delhi</a></li>
+                            <li><a class="dropdown-item" href="/goa">Goa</a></li>
+                            <li><a class="dropdown-item" href="/gujrat">Gujrat</a></li>
+                            <li><a class="dropdown-item" href="/hariyana">Hariyana</a></li>
+                            <li><a class="dropdown-item" href="/himachal_pradesh">Himachal Pradesh</a></li>
+                            <li><a class="dropdown-item" href="/jammu_and_kashmir">Jammu and Kashmir</a></li>
+                            <li><a class="dropdown-item" href="/jharkhand">Jharkhand</a></li>
+                            <li><a class="dropdown-item" href="/karnataka">Karnataka</a></li>
+                            <li><a class="dropdown-item" href="/kerala">Kerala</a></li>
+                            {% comment %}
+                            <li><a class="dropdown-item" href="/ladakh">Ladakh</a></li> {% endcomment %}
+                            <li><a class="dropdown-item" href="/madhya_pradesh">Madhya Pradesh</a></li>
+                            <li><a class="dropdown-item" href="/maharashtra">Maharashtra</a></li>
+                            <li><a class="dropdown-item" href="/manipur">Manipur</a></li>
+                            <li><a class="dropdown-item" href="/meghalaya">Meghalaya</a></li>
+                            <li><a class="dropdown-item" href="/mizoram">Mizoram</a></li>
+                            <li><a class="dropdown-item" href="/nagaland">Nagaland</a></li>
+                            <li><a class="dropdown-item" href="/odisha">Odisha</a></li>
+                            <li><a class="dropdown-item" href="/punjab">Punjab</a></li>
+                            <li><a class="dropdown-item" href="/sikkim">Sikkim</a></li>
+                            <li><a class="dropdown-item" href="/tamilnadu">Tamilnadu</a></li>
+                            <li><a class="dropdown-item" href="/telangana">Telengana</a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li> -->
+                </ul>
+                <form class="d-flex">
+                    <!-- <input class="form-control me-2" type=/"search" placeholder="Search" aria-label="Search"> -->
+                    <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+                    <!-- <button><a id="{%if request.path == '/aboutus/' %}active3{%endif%}" style="margin-right: 40px; color: rgb(16, 20, 20);font-size: 18px; " href="/aboutus"> About Us</a></button>
+                    <button>                
+                            <a id="{%if request.path == '/contactus/' %}ac{%endif%}" style="margin-right: 40px; color: rgb(16, 20, 20);font-size: 18px; " href="/contactus">
+                    Contact Us</a></button> -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="{%if request.path == '/aboutus/' %}active4{%endif%}" aria-current="page" href="/aboutus">About US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" id="{%if request.path == '/contactus/' %}active6{%endif%}" aria-current="page" href="/contactus">Contact US</a>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </nav>
