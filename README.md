@@ -4,9 +4,9 @@ Django project for tourism management
 
 firstly download the project then write some command in command prompt
 
-pythone manage.py createsuperuser
-python manage.py makemigrations
-python manage.py migrate
+1. pythone manage.py createsuperuser
+2. python manage.py makemigrations
+3. python manage.py migrate
 
 then finally
-python manage.py runserver
+4. python manage.py runserver
