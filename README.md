@@ -10,3 +10,6 @@ firstly download the project then write some command in command prompt
 
 then finally
 4. python manage.py runserver
+
+// link of live project is 
+http://01shivamkushwah.eu.pythonanywhere.com/
